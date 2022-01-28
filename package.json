@@ -1,0 +1,24 @@
+{
+  "name": "sass-css-lib",
+  "version": "1.0.0",
+  "description": "My first css library while practicing sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CGlinka95/sass-css-lib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CGlinka95/sass-css-lib/issues"
+  },
+  "homepage": "https://github.com/CGlinka95/sass-css-lib#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.0"
+  }
+}

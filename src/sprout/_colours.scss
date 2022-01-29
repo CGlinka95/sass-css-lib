@@ -7,23 +7,25 @@
         background-color: $val;
     }
 
-    //lightness variations
-    @for $i from 1 through 9 {
-        .text-#{$key}-light-#{$i} {
-            color: mix(white, $val, $i * 10);
-        }
-        .bg-#{$key}-light-#{$i} {
-            background-color: mix(white, $val, $i * 10);
-        }
-    }
+    @if ($val != black and $val != white) {
+        //lightness variations
+        @for $i from 1 through 9 {
+            .text-#{$key}-light-#{$i} {
+                color: mix(white, $val, $i * 10);
+            }
+            .bg-#{$key}-light-#{$i} {
+                background-color: mix(white, $val, $i * 10);
+            }
+        }//end for
 
-    //darkness variations
-    @for $i from 1 through 9 {
-        .text-#{$key}-dark-#{$i} {
-            color: mix(black, $val, $i * 10);
-        }
-        .bg-#{$key}-dark-#{$i} {
-            background-color: mix(black, $val, $i * 10);
-        }
-    }
-}
+        //darkness variations
+        @for $i from 1 through 9 {
+            .text-#{$key}-dark-#{$i} {
+                color: mix(black, $val, $i * 10);
+            }
+            .bg-#{$key}-dark-#{$i} {
+                background-color: mix(black, $val, $i * 10);
+            }
+        }//end for
+    }// end if
+}// end each

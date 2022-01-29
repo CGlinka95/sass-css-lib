@@ -4,6 +4,29 @@ $secondary: #1ac888;
 $error: #d32752;
 $info: #f7c31c;
 
+//Colour palette
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "blue": #1919e6,
+    "red": #e61919,
+    "yellow": #e6e619,
+    "green": #19e635,
+    "orange": #ffa600,
+    "purple": #9900ff,
+    "gray": #808080,
+    "black": black,
+    "white": white,
+);
+
+//Mapping using the above colour palette
+//@debug map-get($colors, "purple"); //checks for the hex-code of a colour
+//@debug map-has-key($colors, "secondary"); //checks for a named key against a boolean
+//@debug map-remove($colors, "primary"); //removes a variable from the map
+//@debug map-merge($colors, ("pink": #ffc0cb)); //adds a variable to the map
+
 //Spacing variables
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;

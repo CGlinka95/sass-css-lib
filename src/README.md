@@ -1,6 +1,8 @@
-# sass-css-lib Notes & Explanations
+# Sprout
 
-## My first css library to practice sass and other node packages, such as gulp
+## sass-css-lib Notes & Explanations
+
+### My first css library to practice sass and other node packages, such as gulp
 
 - Sass compiled using gulp and js functionality in gulpfile.js:
 
@@ -15,7 +17,7 @@ buildStyles function that updates index.css with browser valid css, compiled fro
 
 ```bash
     function buildStyles() {
-        return src('scss/*.scss')
+        return src('scss/**/*.scss')
             .pipe(sass())
             .pipe(dest('css'))
     }
@@ -25,13 +27,15 @@ watchTask function that watches the index.scss file for valid sass changes, then
 
 ```bash
     function watchTask() {
-        watch(['scss/*.scss'], buildStyles)
+        watch(['scss/**/*.scss'], buildStyles)
     }
 ```
 
 - The purpose here is to keep both files in sync with one another.
 
 - *.scss = search for any named file with the .scss file extension.
+
+- **/*.scss = search through sub folders inside parent directory.
 
 Finally, I export by default the series variable, calling both functions:
 

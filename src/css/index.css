@@ -26,36 +26,3 @@ hr {
 img {
   max-width: 100%;
 }
-
-h1 {
-  color: #326dee;
-  margin-bottom: 0.75rem;
-}
-
-a {
-  color: #1ac888;
-}
-
-button {
-  color: white;
-  border: 0;
-  background: #326dee;
-  border-radius: 20px;
-  padding: 0.75rem;
-}
-
-.error {
-  color: #d32752;
-  border: 1px solid #d32752;
-  border-radius: 20px;
-  margin: 0.75rem;
-  padding: 0.75rem;
-}
-
-.notification {
-  color: #1ac888;
-  border: 1px solid #1ac888;
-  border-radius: 20px;
-  margin: 0.75rem;
-  padding: 0.75rem;
-}

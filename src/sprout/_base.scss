@@ -4,16 +4,31 @@
 /* reset styles */
 * {
     color: inherit;
-    margin: 0;
+    margin: 0 auto;
   }
   
   body {
     font-family: Poppins;
   }
 
+  main {
+    margin: $base-margin;
+  }
+
   h1 {
     font-family: Oleo Script;
     font-weight: bold;
+    font-size: $font-size-xxl;
+    text-align: center;
+    padding-bottom: $base-padding;
+  }
+
+  h2 {
+    padding-top: $base-padding;
+  }
+
+  span {
+    font-size: $font-size-lg;
   }
   
   ul {
